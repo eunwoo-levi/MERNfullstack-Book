@@ -11,6 +11,9 @@ root.render(
   </BrowserRouter>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+/* <Router 쓰는법>
+npm i react-router-dom  설치
+<BrowserRouter> 로 <App/> 감싸고
+App.js가서  Routes, Route  들을 import하고 등등 사용
+
+*/
