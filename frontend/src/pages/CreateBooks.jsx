@@ -1,12 +1,12 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
-import BackButton from "../components/Backbutton";
+import { useNavigate } from "react-router-dom";
 import Spinner from "../components/Spinner";
+import BackButton from "../components/BackButton";
 
 const CreateBooks = () => {
   const [title, setTitle] = useState("");
-  const [author, setAuthoer] = useState("");
+  const [author, setAuthor] = useState("");
   const [publishYear, setPublishYear] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const CreateBooks = () => {
       .post("http://localhost:5555/books", data)
       .then(() => {
         setLoading(false);
-        Navigate("/");
+        navigate("/");
       })
       .catch((error) => {
         setLoading(false);
@@ -58,10 +58,13 @@ const CreateBooks = () => {
           <input
             type="number"
             value={publishYear}
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={(e) => setPublishYear(e.target.value)}
             className="border-2 border-gray-500 px-4 py-2 w-full"
           />
         </div>
+        <button className="p-2 bg-sky-300 m-8" onClick={handleSaveBook}>
+          Save
+        </button>
       </div>
     </div>
   );
