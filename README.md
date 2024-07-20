@@ -1,8 +1,9 @@
-![edit](https://github.com/user-attachments/assets/cbc641e6-7395-439b-87f0-d34e601bdc25)![id](https://github.com/user-attachments/assets/d09cb884-1102-47b0-9e8c-682c04239e55)Making a Books-List using MERN full stack
+Books-List using **MERN Full stack**
 
 <Flameworks>
 backend - Node.js, Express, MongoDB
 Frontend - React
+
 <br/><br/>
 -메인 페이지-
   <br/>
