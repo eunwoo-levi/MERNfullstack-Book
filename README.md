@@ -1,4 +1,4 @@
-Making a Book-Note using MERN full stack
+Making a Books-List using MERN full stack
 
 <Flameworks>
 backend - Node.js, Express, MongoDB
